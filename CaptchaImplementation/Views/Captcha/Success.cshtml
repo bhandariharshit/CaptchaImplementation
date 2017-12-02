@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Success";
+}
+@Html.AntiForgeryToken()
+<div>
+    <h4>Success</h4>
+    <hr />
+    <h2 class="text-success">
+        <i class="glyphicon glyphicon-ok"></i> @ViewBag.Message
+    </h2>
+</div>
+<p>
+    @Html.ActionLink("Want to take the challenge again", "Index")
+</p>
